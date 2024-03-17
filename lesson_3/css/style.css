@@ -1,0 +1,44 @@
+@import url("reset.css");
+*{
+   font-size: 15px;
+}
+p {
+   color: darksalmon;
+}
+.list {
+color: lawngreen;
+}
+.link {
+   font-size: 25px;
+}
+.text{
+color: black;
+}
+.title {
+font-size: 30px;
+}
+.sub-title {
+font-size: 20px;
+color: blue;
+}
+.block .sub-title-big {
+color: darkgreen;
+}
+.link-trans {
+   color: aqua;
+}
+.title-big {
+   font-size: 40px;
+   color: red;
+}
+#section-1,
+#section-5{
+   color: gold;
+}
+[class*="tle"] {
+   color: mediumvioletred;
+}
+.block + p {
+   font-size: 30px;
+   color: violet;
+}
