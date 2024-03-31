@@ -1,0 +1,210 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+*/
+@import url("fonts.css");
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+body{
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.875;
+   text-align: left;
+   color: #2a2828;
+   letter-spacing: 0;
+   /*width: 100%;*/
+   margin: 0 auto;
+}
+.block{
+background-color: aqua;
+}
+.inline{
+background-color: chartreuse;
+}
+.inline-block{
+background-color: rgba(182, 20, 20, 0.884);
+}
+.block{
+   padding: 10px 20px 30px 15px;
+   margin: 50px;
+   min-height: 100px;
+   max-height: 500px;
+   height: 100px;
+   overflow: auto;
+   }
+.inline{
+   margin: 15px;
+   }
+.inline-block{
+/*margin-top: 50px;*/
+margin: -40px 20px 10px -40px;
+   }
+ /*  .block{
+      
+      }
+   .inline{
+   
+      }
+   .inline-block{
+   width: 300px;
+   vertical-align: middle;
+}
+.block{
+   padding: 15px;
+   width: 250px;
+   display: inline;   
+}
+.inline{
+   padding: 15px;
+   width: 250px;
+   display: block;
+}
+.inline-block{
+display: none;
+}
+.block{
+   padding: 15px;
+   width: 500px;
+   margin-bottom: 20px;   
+}
+.inline{
+   padding: 15px;
+   width: 250px;
+   display: inline-block;
+}
+.inline-block{
+}
+*/
+.block{
+   padding: 15px;
+   width: 500px;
+   margin-bottom: 20px;   
+}
+.inline{
+   padding: 15px;
+   width: 250px;
+   display: inline-block;
+}
+
+.page-global{
+   width: 100%;
+   max-width: 1920px;
+   
+}
+.page{
+   width: 100%;
+   max-width: 1920px;
+   padding: 40px 425px 40px 425px;
+}
+.header{
+   font-size: 40px;
+   font-weight: 700;
+   color: blue;
+}
+.title {
+   font-size: 40px;
+   font-weight: 600;
+   margin: 20px 0px 40px 0px;
+}
+.line-title{
+   width: 100%;
+   max-width: 1070px;
+   max-height: 380px;
+   margin: 0px 0px 40px 0px;
+}
+.title-text{
+   font-size: 20px;
+   font-weight: 600;
+   text-align: left;
+   margin: 40px 0px 30px 0px;
+   }
+.text-shadow {
+   color: rgba(42, 40, 40, 0.418);
+   margin: 0px 0px 40px 0px;
+}
+.articl{
+   margin: 0px 0px 20px 46px;
+}
+.list-articl{
+margin: 0px 0px 40px 0px;
+}
+.block-block {
+   width: 100%;
+   max-width: 1320px;
+   margin: 50px 288px 50px 288px;
+} 
+.title-block {
+   font-family: "Roboto", sans-serif; 
+   font-size: 50px;
+   font-weight: 500;
+   text-align: center;
+   text-transform: capitalize;
+   margin-bottom: 40px;
+}
+.item{
+   width: 16.66%;
+   max-width: 200px;
+   max-height: 200px;
+   margin: 5px 12px 5px 12px;
+   }
+.block-item{
+   margin: 0 -12px;
+   font-size: 0;
+}
+.block-page{
+   font-family: "Proxima Nova", sans-serif;
+   max-width: 1920px;
+   max-height: 700px;
+   padding: 35px 310px 60px 310px;
+}
+.page-conteiner{
+   margin: 0 -15px;
+   font-size: 0;
+}
+.page-title{
+   font-size: 40px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 48px;
+   margin-bottom: 35px;
+}
+.page-title span{
+   text-transform: uppercase;
+}
+.page-item{
+   display: inline-block;
+   width: 25%;
+   text-align: center;
+   vertical-align: top;
+   max-width: 300px;
+   overflow: auto;
+   margin: 0px 15px 0px 15px;
+}
+.item-mark{
+   max-width: 170px;
+   max-height: 170px;
+}
+.item-title{
+   font-size: 26px;
+   font-weight: 600;
+   line-height: 34px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.item-text{
+   font-size: 16px;
+}
+.section-title{
+   font-size: 30px;
+   font-weight: 700;
+   color: blue;
+}
+.text{
+   margin-bottom: 12px;
+}
