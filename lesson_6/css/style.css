@@ -1,0 +1,303 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+*/
+@import url("fonts.css");
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700");
+
+body{
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.875;
+   text-align: left;
+   color: #2a2828;
+   letter-spacing: 0;
+   /*width: 100%;*/
+   margin: 0 auto;
+}
+.page-trein{
+   margin: 50px;
+   font-size: 20px;
+}
+.block{
+   background-color: blueviolet;
+}
+.inline{
+   background-color: rgb(81, 255, 0);
+}
+.inline-block{
+   background-color: black;
+}
+/*.block{
+   background-color: blueviolet;
+   border: 10px solid green;
+   width: 700px;
+   padding: 10px;
+}
+.block{
+   border-top: 50px solid black;
+   border-right: 30px dashed red;
+   border-bottom: 40px dotted green;
+   border-left: 20px double yellow;
+}
+.inline{
+border: 5px solid;
+}
+.link{
+   color: rgb(55, 0, 255);
+   border-bottom: 10px dotted;
+}
+.block{
+   outline: 20px solid greenyellow;
+   outline-offset: 10px;
+   outline-style: dotted;
+   outline-width: 30px;
+}
+.link{
+   outline: 3px dashed red;
+}
+.block{
+   border: 20px solid green;
+   padding: 20px;
+   border-radius: 50px 50px 30px 40px;
+}
+.inline{
+   line-height: 2px;
+   outline: 5px solid red ;
+}
+.inline-block{
+width: 500px;
+height: 500px;
+border-radius: 50%;
+}
+.block{
+   margin-bottom: 40px;
+   padding: 20px;
+   border-radius: 30px;
+   box-shadow: 
+   inset 10px -10px 20px 10px rgba(255, 0, 0, 0.8),
+   5px 5px 5px 10px rgba(15, 128, 0, 0.8);
+}
+.example{
+padding: 20px;
+}
+.link{
+background-color: blue;
+padding: 20px;
+border-radius: 30px;
+text-transform: uppercase;
+color: white;
+letter-spacing: 4px;
+box-shadow: 0 10px 0px rgb(17, 17, 5);
+}
+.block{
+   visibility: hidden;
+   opacity: 0.6;
+}
+.block{
+   background-image: url("../img/icon.png");
+   background-image: linear-gradient(0deg, rgba(34,195,47,0.9724264705882353) 0%, rgba(253,187,45,1) 100%);
+}
+.block{
+   background-image: url("../img/icon.png");
+   background-repeat: no-repeat;
+   color: aliceblue;
+   background-position: 50px 20px;
+}*/
+.block{
+   background-image: url("../img/honey.jpg");
+   color: aliceblue;
+   background-size: 1920px;
+   background-attachment: fixed;
+}
+.arrow-left{
+width: 0;
+height: 0;
+border-top: 50px solid transparent;
+border-right: 100px solid green;
+border-bottom: 50px solid transparent;
+}
+.arrow-right{
+   width: 0;
+   height: 0;
+   border-top: 50px solid transparent;
+   border-left: 100px solid green;
+   border-bottom: 50px solid transparent;
+}
+.arrow-top{
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 100px solid green;
+   margin-bottom: 10px;
+}
+.arrow-buttom{
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-top: 100px solid green;
+}
+.page-global{
+   width: 100%;
+   max-width: 1920px;
+   margin-bottom: 20px;
+}
+.page{
+   width: 100%;
+   max-width: 1920px;
+   padding: 40px 425px 0px 425px;
+   margin-bottom: 40px;
+}
+.header{
+   font-size: 40px;
+   font-weight: 700;
+   color: blue;
+   margin-bottom: 20px;
+}
+.title {
+   font-size: 40px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   padding-top: 20px;
+}
+.line-title{
+   width: 100%;
+   max-width: 1070px;
+   max-height: 380px;
+   margin-bottom: 40px;
+}
+.title-text{
+   font-size: 20px;
+   font-weight: 600;
+   text-align: left;
+   margin-bottom: 30px;
+   padding-top: 40px;
+   }
+.articl{
+   background: url(../img/Vector.png) 0 0 no-repeat;
+   padding-left: 46px;
+   padding-bottom: 20px;
+   min-height: 27px;
+}
+.list-articl{
+margin-bottom: 40px;
+}
+.conteiner{
+   font-family: "Quicksand", sans-serif;
+   color: #FFFFFF;
+   width: 100%;
+   max-width: 1440px;
+   height: 530px;
+   background: url(../img/Content.png) 0 0 no-repeat;
+   background-size: 100%;
+   margin-bottom: 50px;
+}
+.conteiner-content{
+   width: 47.22%;
+   max-width: 680px;
+   height: 410px;
+   padding-top:  120px;
+   padding-left: 80px;
+}
+.conteiner-title{
+   font-size: 40px;
+   font-weight: bold;
+   line-height: 48px;
+   margin-bottom: 30px;
+}
+.conteiner-text{
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 32px;
+   margin-bottom: 25px;
+}
+.conteiner-button{
+   width: 250px;
+   height: 48px;
+   color: rgba(13, 18, 22, 1);
+   background-color: #FFFFFF;
+   border-radius: 10px;
+}
+.container-button-text{
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 25px;
+   padding-left: 55px;
+   padding-top: 12px;
+}
+.collections{
+   font-family: "Roboto", sans-serif;
+   width: 100%;
+   max-width: 1920px;
+   height: 847px;
+   padding: 220px 320px 60px 320px;
+   background:
+   url("../img/flower-pattern.png") 0 360px no-repeat;
+   margin-bottom: 10px;
+}
+.collections-block{
+   display: inline-block;
+   max-width: 686px;
+   vertical-align: middle;
+   margin-right: 130px;
+}
+.collections-block-title{
+   font-size: 74px;
+   font-weight: 400;
+   line-height: 55px;
+   margin-bottom: 65px;
+}
+.collections-block-text{
+   font-size: 30px;
+   line-height: 55px;
+   text-transform: capitalize;
+   font-weight: 400;
+   margin-bottom: 70px;
+}
+.collections-image,
+.collections-image img {
+   display: inline-block;
+   border-radius: 160px 0;
+   max-width: 424px;
+   width: 100%;
+   height: 542px;
+   
+}
+.collections-image {
+   border: 5px solid rgba(0, 0, 0, 0.25);
+   vertical-align: middle;
+}
+.collections-image img{
+   margin-top: -20px;  
+   margin-left: -18px;
+}
+.collections-block-link {
+   color: #FFFFFF;
+   background-color: rgba(30, 40, 50, 1);
+   padding: 20px 25px 20px 34px;
+   font-weight: 400;
+   font-size: 29px;
+   text-transform: capitalize;
+}
+.collections-block-link span{
+   display: inline-block;
+   background: url("../img/icon.png") 0 10px no-repeat;
+   padding-left: 30px;
+}
+.section-title{
+   font-size: 30px;
+   font-weight: 700;
+   color: blue;
+}
+.text{
+   margin-bottom: 12px;
+}
