@@ -1,0 +1,1407 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900");
+*/
+@import url("fonts.css");
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700");
+
+body{
+   font-family: "Proxima Nova", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.875;
+   text-align: left;
+   color: #2a2828;
+   letter-spacing: 0;
+   /*width: 100%;*/
+   margin: 0 auto;
+}
+
+.wrapper{
+   min-height: 100%;
+   overflow: clip;
+}
+.header{
+   background-color: rgba(100, 93, 0, 0.281);
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.288) ;
+   height: 80px;
+   max-width: 1290px;
+}
+.header__container{
+   width: 100%;
+}
+.header__title{
+   font-size: 40px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   text-align: center;
+   color: rgba(100, 93, 0, 0.918);
+   width: 100%;
+   text-shadow: 3px 2px 3px white;
+}
+.page-global{
+   padding: 20px;
+   max-width: 1290px;
+}
+.transform-3d{
+   width: 100%;
+   margin-bottom: 40px;
+}
+.transform-3d__title{
+   font-size: 50px;
+   text-align: center;
+   font-weight: 600;
+   color: rgba(96, 141, 38, 0.918);
+   margin-bottom: 30px;
+   text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.603);
+}
+.transform-3d__block {
+   width: 200px;
+   height: 200px;
+   background-color: rgba(208, 163, 219, 0.514);
+   display: inline-block;
+   perspective: 400px;
+   transform-style: preserve-3d;
+}
+.transform-3d__block:not(:last-child){
+margin: 0 40px 50px 0px;
+}
+.transform-3d__item-block{
+   width: 200px;
+   height: 200px;
+   background-color: rgb(117, 172, 46);
+   text-align: center;
+   vertical-align: middle;
+   color: aliceblue;
+   font-size: 20px;
+   font-weight: 500;
+   transition: all 0.7s;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.transform-3d__item-block:hover.transform-3d__item-block--1{
+   transform: translate3d(20px, -30px, 40px);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--2{
+   transform: rotate3d(1,1,1,35deg);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--3{
+   transform: rotateY(80deg);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--4{
+   transform: scale3d(-1,-1.4,-1.2);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--5{
+   transform: scale3d(1.2,1.4,1.6);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--6{
+   transform: translate3d(15px, 20px, -20px);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--7{
+   transform: translate3d(20px, -15px, 20px)
+   rotate3d(1,1,1,-35deg);
+}
+.transform-3d__item-block:hover.transform-3d__item-block--8{
+   transform: rotateX(360deg); 
+   backface-visibility: hidden;
+}
+
+.block{
+   width: 200px;
+   height: 200px;
+   background-color: cornflowerblue;
+   
+}
+.block:hover{
+   width: 300px;
+   height: 300px;
+   background-color: aquamarine;
+}
+.block--margin{
+   margin-top: 50px;
+margin-bottom: 50px;
+}
+.block{
+   transition-duration: 0.8s;
+}
+@keyframes{
+   0%
+}
+@keyframes change{
+   0%{
+      
+   }
+   20%{
+      border-radius: 50%;
+   }
+   40%{
+      border-radius: 50%;
+      border: 10px dashed black;
+   }
+   60%{
+      border-radius: 50%;
+      border: 10px dashed yellow;
+   }
+   80%{
+      rotate: 360deg;
+   }
+   100%{
+      
+   }
+}
+
+@keyframes color{
+   0%{
+background-color: aquamarine;
+   }
+   50%{
+background-color: chocolate;
+   }
+   100%{
+background-color: red;
+   }
+}
+@keyframes transit{
+   0%{
+translate: 0px 0px;
+   }
+   100%{
+      translate: 900px 0px;
+   }
+}
+.block{
+   /* animation: color 6s liner normal running 0s forwards; */
+   animation-name: color, transit, change;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-delay: 8s;
+   animation-fill-mode: forwards;
+}
+
+
+
+
+.car {
+   width: 100%;
+}
+.car__container {
+   width: 100%;
+   height: auto;
+   min-height: 600px;
+   background: url(..//img/fon.jpg) 0 0 round;
+}
+.car__title {
+   font-size: 50px;
+   font-weight: 700;
+   text-align: center;
+   color: white;
+   margin-bottom: 40px;
+   text-shadow: 5px 5px 2px black;
+}
+.body-car {
+   height: 700px;
+   width: 100%;
+   padding: 20px;
+   position: relative;
+   /* transform: translate(100%, 0px);
+   transition-duration: 1s; */
+}
+.body-car:hover{
+   /* transform: translate(0px, 0px); */
+}
+
+.body-car__wheel {
+   position: absolute;
+   top: 400px;
+   right: 700px;
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   border-radius: 50%;
+   /* border: 5px dashed yellow; */
+   outline: 10px solid black;
+   outline-style: dashed;
+   outline-width: 5px;
+   outline-offset: 1px;
+   z-index: 5; 
+   overflow: auto;
+   transform: translate(0px, 200%);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__wheel {
+   transform: translate(0px, 0px);
+   transition-delay: 1.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+
+.body-car__wheel1 {
+   position: absolute;
+   top: 450px;
+   right: 750px;
+   width: 100px;
+   height: 100px;
+   background-color: white;
+   border-radius: 50%;
+   outline: 10px solid red;
+   outline-style: double;
+   outline-width: 5px;
+   outline-offset: 1px;
+   z-index: 5; 
+   transform: translate(0px, 400px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__wheel1{
+   transform: translate(0px, 0px);
+   transition-delay: 1.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+.body-car__wheel2 {
+   position: absolute;
+   top: 490px;
+   right: 790px;
+   width: 20px;
+   height: 20px;
+   background-color: black;
+   border-radius: 50%;
+   outline: 5px solid black;
+   outline-style: double;
+   outline-width: 2px;
+   outline-offset: 1px;
+   z-index: 5; 
+   transform: translate(0px, 400px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__wheel2{
+   transform: translate(0px, 0px);
+   transition-delay: 1.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+.body-car__wheel-big {
+   position: absolute;
+   top: 300px;
+   right: 200px;
+   width: 300px;
+   height: 300px;
+   background-color: black;
+   border-radius: 50%;
+   outline: 20px solid black;
+   outline-style: dashed;
+   outline-width: 10px;
+   outline-offset: 1px;
+   z-index: 6; 
+   transform: translate(0px, 450px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__wheel-big{
+   transform: translate(0px, 0px);
+   transition-delay: 2.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+.body-car__wheel-big1 {
+   position: absolute;
+   top: 350px;
+   right: 250px;
+   width: 200px;
+   height: 200px;
+   background-color: white;
+   border-radius: 50%;
+   /* border: 5px dashed yellow; */
+   outline: 10px solid red;
+   outline-style: double;
+   outline-width: 10px;
+   outline-offset: 1px;
+   z-index: 6; 
+   transform: translate(0px, 450px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__wheel-big1{
+   transform: translate(0px, 0px);
+   transition-delay: 2.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+.body-car__wheel-big2 {
+   position: absolute;
+   top: 425px;
+   right: 325px;
+   width: 50px;
+   height: 50px;
+   background-color: black;
+   border-radius: 50%;
+   /* border: 5px dashed yellow; */
+   outline: 5px solid black;
+   outline-style: double;
+   outline-width: 8px;
+   outline-offset: 1px;
+   z-index: 6; 
+   transform: translate(0px, 450px);
+   transition-duration: 2s;
+   opacity: 0;
+   
+}
+.body-car:hover .body-car__wheel-big2{
+   transform: translate(0px, 0px);
+   transition-delay: 2.2s;
+   transition-timing-function: cubic-bezier(0.930, 0.505, 0.395, 1.340);
+   opacity: 1;
+} 
+
+.body-car__detail1 {
+   position: absolute;
+   top: 250px;
+   right: 200px;
+   width: 650px;
+   height: 230px;
+   background-color: red;
+   border-radius: 50px 50px 0 40px;
+   transform: skew(-10deg, 0);
+   z-index: 4;
+   transform: translate(0px, 500px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail1 {
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   opacity: 1;
+}
+
+
+.body-car__detail2 {
+   position: absolute;
+   top: 50px;
+   right: 265px;
+   width: 130px;
+   height: 200px;
+   background-color: rgb(0, 255, 221);
+   border-radius: 0px 30px 0px 10px;
+   outline: 15px solid red;
+   outline-style: solid;
+   outline-width: 15px;
+   outline-offset: 1px; 
+   z-index: 4;
+   transform: skew(5deg, 0);
+   transform: translate(0px, -500px) ;
+   transition-duration: 1.2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail2 {
+   transform: translate(0px, 0px);
+   transform: skew(5deg, 0);
+   transition-delay: 1s;
+   opacity: 1;
+}
+.body-car__detail3 {
+   position: absolute;
+   top: 50px;
+   right: 385px;
+   width: 120px;
+   height: 200px;
+   background-color: rgb(0, 255, 221);
+   border-radius: 30px 10px 0px 0px;
+   outline: 15px solid red;
+   outline-style: solid;
+   outline-width: 15px;
+   outline-offset: 1px;
+   z-index: 3;
+   transform: skew(-10deg, 0);
+   transform: translate(0px, -500px);
+   transition-duration: 1.1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail3 {
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 1s;
+   opacity: 1;
+}
+.body-car__detail4 {
+   position: absolute;
+   top: 270px;
+   right: 440px;
+   width: 90px;
+   height: 70px;
+   background-color: rgb(0, 255, 221);
+   border-radius: 0px 0px 70px 0px;
+   outline: 15px solid red;
+   outline-style: solid;
+   outline-width: 15px;
+   outline-offset: 1px;
+   transform: skew(-10deg, 0); 
+   z-index: 5;
+   transform: translate(0px, -500px);
+   transition-duration: 1.1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail4 {
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0); 
+   transition-delay: 1s;
+   opacity: 1;
+}
+
+
+
+
+
+.body-car__detail5 {
+   width: 17px;
+   height: 120px;
+   background-color: black;
+   /* border-radius: 15%; */
+   position: absolute;
+   top: 100px;
+   right: 680px;
+   z-index: 3;
+   opacity: 0;
+   transform: translate(0px, 180px);
+   transition-duration: 1.3s;
+}
+.body-car:hover .body-car__detail5 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail6 {
+   width: 18px;
+   height: 25px;
+   background-color: black;
+   border-radius: 15%;
+   position: absolute;
+   top: 78px;
+   right: 689px;
+   z-index: 3;
+   transform: translate(0px, 180px);
+   transition-duration: 1.3s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail6 {
+   transform: translate(0px, 0px);
+   transform: skew(40deg, 0);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail7 {
+   width: 270px;
+   height: 30px;
+   background-color: red;
+   border-radius: 10px 10px 3px 5px ;
+   position: absolute;
+   top: 30px;
+   right: 250px;
+   z-index: 5;
+   transform: translate(600px, 0px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail7{
+   transform: translate(0px, 0px);
+   transition-delay: 4s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail8 {
+   width: 35px;
+   height: 70px;
+   background-color: black;
+   border-radius: 15%;
+   position: absolute;
+   top: 200px;
+   right: 670px;
+   z-index: 3;
+   transform: translate(0px, 180px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail8 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+
+
+.body-car__detail9 {
+   position: absolute;
+   top: 300px;
+   right: 730px;
+   z-index: 6;
+   width: 80px;
+   height: 5px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(-900px, 0px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail9{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.2s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail10 {
+   position: absolute;
+   top: 320px;
+   right: 745px;
+   z-index: 6;
+   width: 70px;
+   height: 5px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(-900px, 0px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail10{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.3s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail11 {
+   position: absolute;
+   top: 340px;
+   right: 760px;
+   z-index: 6;
+   width: 60px;
+   height: 5px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(-900px, 0px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail11{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.4s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail12 {
+   position: absolute;
+   top: 390px;
+   right: 650px;
+   z-index: 6;
+   width: 5px;
+   height: 30px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   transform: translate(0px, 900px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail12{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.6s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+
+.body-car__detail14 {
+   position: absolute;
+   top: 390px;
+   right: 630px;
+   z-index: 6;
+   width: 5px;
+   height: 30px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   transform: translate(0px, 900px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail14{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.7s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail15 {
+   position: absolute;
+   top: 390px;
+   right: 610px;
+   z-index: 6;
+   width: 5px;
+   height: 30px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   transform: translate(0px, 900px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail15{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5.8s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail16 {
+   position: absolute;
+   top: 260px;
+   right: 250px;
+   z-index: 6;
+   width: 160px;
+   height: 20px;
+   background-color: black;
+   border-radius: 10px 10px 0px 0px;
+   transform: translate(0px, -550px);
+   transition-duration: 2s;
+   opacity: 0;
+
+}
+.body-car:hover .body-car__detail16{
+   transform: translate(0px, 0px);
+   transition-delay: 3s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail17 {
+   position: absolute;
+   top: 295px;
+   right: 168px;
+   z-index: 6;
+   width: 120px;
+   height: 20px;
+   background-color: black;
+   border-radius: 15px 10px 0px 0px;
+   transform: rotate(45deg);
+   transform: translate(0px,-550px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail17{
+   transform: translate(0px, 0px);
+   transform: rotate(45deg);
+   transition-delay: 3s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail18 {
+   position: absolute;
+   top: 250px;
+   right: 805px;
+   width: 45px;
+   height: 45px;
+   background-color: black;
+   border-radius: 0px 50% 50% 0px;
+   border: 5px solid rgb(100, 12, 12);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(30px, 0px);
+   transition-duration: 1.3s;
+}
+.body-car:hover .body-car__detail18 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail19 {
+   position: absolute;
+   top: 80px;
+   right: 235px;
+   width: 20px;
+   height: 60px;
+   background-color: black;
+   border-radius: 50% 0px 0px 50%;
+   border: 5px solid rgb(100, 12, 12);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(-30px, 0px);
+   transition-duration: 1.3s;
+}
+.body-car:hover .body-car__detail19 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail20 {
+   position: absolute;
+   top: 260px;
+   right: 415px;
+   z-index: 10;
+   width: 380px;
+   height: 2px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: skew(-10deg, 0);
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(-900px, 0px);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail20{
+   transform: translate(0px, 0px);
+   transform: skew(-10deg, 0);
+   transition-delay: 5s;
+   transition-timing-function: cubic-bezier(0.490, 0.160, 0.390, 1.200);
+   opacity: 1;
+} 
+.body-car__detail21 {
+   position: absolute;
+   top: 250px;
+   right: 185px;
+   width: 30px;
+   height: 60px;
+   background-color: black;
+   border-radius: 50% 0px 0px 50%;
+   border: 5px solid rgb(100, 12, 12);
+   transform: skew(20deg, 0);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(-30px, 0px);
+   transition-duration: 1.3s;
+}
+.body-car:hover .body-car__detail21{
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail22 {
+   position: absolute;
+   top: 250px;
+   right: 850px;
+   width: 15px;
+   height: 45px;
+   background-color: yellow;
+   border-radius: 50% 0px 0px 50%;
+   border: 5px solid rgb(100, 12, 12);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(30px, 0px);
+   transition-duration: 1.7s;
+}
+.body-car:hover .body-car__detail22 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail23 {
+   position: absolute;
+   top: 80px;
+   right: 220px;
+   width: 20px;
+   height: 60px;
+   background-color: white;
+   border-radius: 0px 50% 50% 0px;
+   border: 5px solid rgb(100, 12, 12);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(-30px, 0px);
+   transition-duration: 1.7s;
+}
+.body-car:hover .body-car__detail23 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail24 {
+   position: absolute;
+   top: 250px;
+   right: 180px;
+   width: 15px;
+   height: 60px;
+   background-color: rgba(219, 33, 33, 0.842);
+   border-radius: 0px 50% 50% 0px;
+   border: 5px solid rgb(100, 12, 12);
+   transform: skew(20deg, 0);
+   z-index: 7;
+   opacity: 0;
+   transform: translate(-30px, 0px);
+   transition-duration: 1.7s;
+}
+.body-car:hover .body-car__detail24 {
+   transform: translate(0px, 0px);
+   transition-delay: 7s;
+   opacity: 1;
+}
+.body-car__detail25 {
+   position: absolute;
+   top: 370px;
+   right: 730px;
+   z-index: 6;
+   width: 120px;
+   height: 11px;
+   background-color: black;
+   border-radius: 10px 10px 0px 0px;
+   transform: translate(0px, -550px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail25{
+   transform: translate(0px, 0px);
+   transition-delay: 3s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail26 {
+   position: absolute;
+   top:395px;
+   right: 665px;
+   z-index: 6;
+   width: 90px;
+   height: 10px;
+   background-color: black;
+   border-radius: 10px 10px 0px 0px;
+   transform: rotate(45deg);
+   transform: translate(0px, -550px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail26{
+   transform: translate(0px, 0px);
+   transform: rotate(45deg);
+   transition-delay: 3s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail27 {
+   position: absolute;
+   top: 275px;
+   right: 335px;
+   z-index: 10;
+   width: 400px;
+   height: 2px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   transform: rotate(-80deg);
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(0px, -550px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail27{
+   transform: translate(0px, 0px);
+   transform: rotate(-80deg);
+   transition-delay: 3s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+.body-car__detail28 {
+   position: absolute;
+   top: 43px;
+   right: 260px;
+   z-index: 10;
+   width: 250px;
+   height: 8px;
+   background-color: black;
+   outline: 5px solid black;
+   outline-style: double;
+   border-radius: 2px 0px 0px 0px;
+   transform: translate(600px, 0px);
+   transition-duration: 2s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail28{
+   transform: translate(0px, 0px);
+   transition-delay: 4s;
+   transition-timing-function: cubic-bezier(0.430, 1.025, 0.815, 0.605);
+   opacity: 1;
+} 
+
+.body-car__detail29 {
+   position: absolute;
+   top: 252px;
+   right: 860px;
+   width: 200px;
+   height: 41px;
+   background-color: rgba(255, 255, 0, 0.39);
+   border-radius: 50% 0px 0px 50%;
+   box-shadow: 0px 0px 10px 10px  rgba(255, 255, 0, 0.39);
+   z-index: 7;
+   opacity: 0;
+   /* transform: translate(30px, 0px); */
+   transition-duration: 1s;
+}
+.body-car:hover .body-car__detail29 {
+   transform: translate(0px, 0px);
+   transition-delay: 9.3s;
+   opacity: 1;
+}
+.body-car__detail30 {
+   position: absolute;
+   top: 87px;
+   right: 30px;
+   width: 200px;
+   height: 46px;
+   background-color: rgba(255, 255, 255, 0.521);
+   border-radius: 0px 50% 50% 0px;
+   box-shadow: 0px 0px 10px 10px  rgba(255, 255, 255, 0.521);
+   z-index: 7;
+   opacity: 0;
+   transition-duration: 1s;
+}
+.body-car:hover .body-car__detail30 {
+   transform: translate(0px, 0px);
+   transition-delay: 9.3s;
+   opacity: 1;
+}
+.body-car__detail31 {
+   position: absolute;
+   top: 257px;
+   right: -10px;
+   width: 200px;
+   height: 46px;
+   background-color: rgba(219, 33, 33, 0.527);
+   border-radius: 0px 50% 50% 0px;
+   box-shadow: 0px 0px 10px 10px rgba(219, 33, 33, 0.527);
+   z-index: 7;
+   opacity: 0;
+   transition-duration: 1s;
+}
+.body-car:hover .body-car__detail31 {
+   transform: translate(0px, 0px);
+   transition-delay: 9.3s;
+   opacity: 1;
+}
+
+.body-car__detail32 {
+   width: 180px;
+   height: 10px;
+   background-color: rgba(0, 0, 0, 0.664);
+   border-radius: 15px;
+   /* outline: 5px dotted rgba(0, 0, 0, 0.664); */
+   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.664);
+   position: absolute;
+   top: 0px;
+   right: 689px;
+   z-index: 3;
+   transform: rotate(45deg);
+   transition-duration: 1s;
+   opacity: 0;
+}
+.body-car:hover .body-car__detail32 {
+   transform: translate(0px, 0px);
+   transform: rotate(45deg);
+   transition-delay: 8.5s;
+   opacity: 1;
+}
+
+
+
+
+
+
+@keyframes rotate{
+   0%{
+      rotate: 0deg;
+   }
+   100%{
+      rotate: -360deg;
+   }
+}
+@keyframes move{
+   0%{
+      translate: 0px 0px;
+   }
+   100%{
+      translate: -1200px 0px;
+   }
+}
+
+.body-car:hover .body-car__wheel-big{
+   /* animation: rotate 7s linear infinite normal running 15s forwards;
+   animation: move 5s linear 1 normal running 20s forwards; */
+   animation-name: rotate, move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+/* .body-car__wheel-big{
+   animation: move 5s linear 1 normal running 20s forwards;
+   animation-delay: 20s;
+} */
+.body-car:hover .body-car__wheel{
+   animation-name: rotate, move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+.body-car:hover .body-car__wheel1{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__wheel2 {
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+.body-car:hover .body-car__wheel-big1{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__wheel-big2{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail1{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+.body-car:hover .body-car__detail2{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail3{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail4{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail5{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail6 {
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail7{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail8{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail9{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail10{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail11{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail12{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+.body-car:hover .body-car__detail14{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail15{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail16{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail17{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail18{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail19{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail20{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail21{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+.body-car:hover .body-car__detail22{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail23{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail24{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail25{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail26{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail27{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail28{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail29{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail30{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail31{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+.body-car:hover .body-car__detail32{
+   animation-name: move;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-delay: 11s;
+   animation-fill-mode: forwards;
+}
+
+
+
+
+
+.section {
+   background-color: rgba(100, 93, 0, 0.281);
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.288) ;
+   height: 80px;
+   max-width: 1290px;
+}
+.section-title {
+   font-size: 40px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   text-align: center;
+   color: rgba(100, 93, 0, 0.918);
+   width: 100%;
+   text-shadow: 3px 2px 3px white;
+}
