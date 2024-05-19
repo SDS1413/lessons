@@ -236,13 +236,10 @@ body{
    justify-content: space-between;
    column-gap: 25px;
    row-gap: 10px;
-   line-height: 30px;
-   font-size: 16px;
-   font-weight: 400;
    /* flex-wrap: wrap; */
    /* flex-grow: 1;
    flex-shrink: 0; */
-   /* max-height: 147px; */
+   /* height: 147px; */
 
    
 }
@@ -251,8 +248,9 @@ body{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   gap: 15px;
+   gap: 10px;
    flex-basis: 210px;
+   /* height: 142px; */
    align-items: center;
    position: relative;
    padding-left: 15px;
@@ -268,9 +266,12 @@ body{
 .delivery__item {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-around;
    flex-basis: 210px;
-   max-height: 147px;
+   height: 142px;
+   line-height: 20px;
+   font-size: 16px;
+   font-weight: 400;
    border-radius: 8px;
    position: relative;
    transition: 0.3s all;
@@ -319,8 +320,6 @@ body{
 }
 
 
-
-
 .delivery__item input:checked + label::before{
    
    opacity: 1;
@@ -348,9 +347,10 @@ transition: 0.3s all;
 .delivery__post{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   gap: 15px;
+   justify-content: space-around;
+   gap: 10px;
    flex-basis: 210px;
+   height: 142px;
    align-items: center;
    position: relative;
    padding-left: 15px;
@@ -361,9 +361,10 @@ transition: 0.3s all;
 .delivery__courier{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   gap: 15px;
+   justify-content: space-around;
+   gap: 10px;
    flex-basis: 210px;
+   height: 142px;
    align-items: center;
    position: relative;
    padding-left: 15px;
@@ -560,6 +561,7 @@ transition: 0.3s all;
    color: #535353;
    border: 1px solid #D1D5D5;
    padding: 10px 15px;
+   resize: vertical;
    
 }
 .form__submit {
@@ -568,7 +570,6 @@ transition: 0.3s all;
    align-items: center;
    padding: 30px;
    gap: 30px;
-   border-bottom: 5px solid #F8F8F8;
    flex-shrink: 0;
 }
 .submit {
